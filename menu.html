@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-with, initial-scale=1.0">
+        <link rel="stylesheet" href="encriptador.css">       
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <title>Challenge Encriptador</title>
+    </head>
+    <body>
+        <header>
+            <h1><img class="logo" src="imagenes/logo-alura.png" alt="Logo"></h1>
+        </header>
+        <main>
+            <div id="video-container">
+                <video autoplay muted loop id="video-background">
+                  <source src="/video/matrix.mp4" type="video/mp4">
+                  </video>
+              </div>
+              
+            <section class="seccion1">
+                <div class="contenedor-caja-texto">
+                    <textarea placeholder="Ingrese el texto aqui" class="caja-texto"></textarea>
+                </div>
+                <div class="alerta">
+                    <img src="imagenes/alerta.jpg" alt="alerta">
+                    <p>Solo letras minusculas y sin acentos</p>
+                </div>
+                <div class="contenedor-botones">
+                    <input type="button" class="boton-encriptar" value="Encriptar">
+                    <input type="button" class="boton-desencriptar" value="Desencriptar">
+                </div>
+            </section>
+            <section class="seccion2">
+                <div class="contenedor-figura">
+                    <img src="imagenes/neo.png" alt="Figura">
+                </div>
+                <div class="contenedor-parrafo">
+                    <h3>Ningun mensaje fue <br> Encontrado</h3>
+                    <p>Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+                </div>
+                <div class="contenedor-copiar">
+                    <input type="button" class="boton-copiar" value="Copiar">
+                </div>
+                <div class="contenedor-resultado">
+                    <p class="texto-resultado"></p>
+                </div>
+            </section>
+        </main>
+        <script src="script.js" ></script>
+    </body>
+</html>
